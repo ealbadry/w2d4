@@ -44,9 +44,15 @@ function bubble_Sort(a)
     } while (swapp);
  return x; 
 }
-
-console.log(bubble_Sort([5,8,2]));
 document.write("bubble_Sort: "+ bubble_Sort([5,8,2]));
+
+/// Exercise 3:
+	var Teacher = function() {};
+	Teacher.prototype = new Person();
+	Teacher.prototype.teach = function(subject)
+{
+console.log(this.name + " is now teaching  " + subject);
+}
 </script>
 </body>
 </html>
