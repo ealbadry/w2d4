@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+// Exercise 1:
+var filtering = function (array, str) {
+
+	let arr = array;
+	
+	array = array.filter(e => e !== str); 
+	return array;
+} 
+
+let arra = ['Ahmed', 'Baick', 'Caly'];
+let word = 'Caly';
+console.log(filtering(arra, word) );
+document.write("Array: "+ arra + " >> word to be removed: "+ word);
+document.write('</br>' + "returned Array: "+ filtering(arra, word) + '</br>');
+
+/////////////////////////////////////////////////////////////////////////////////////
+// Exercise 2:
+function bubble_Sort(a)
+{
+    var swapp;
+    var n = a.length-1;
+    var x=a;
+    do {
+        swapp = false;
+        for (var i=0; i < n; i++)
+        {
+            if (x[i] > x[i+1])
+            {
+               var temp = x[i];
+               x[i] = x[i+1];
+               x[i+1] = temp;
+               swapp = true;
+            }
+        }
+        n--;
+    } while (swapp);
+ return x; 
+}
+
+console.log(bubble_Sort([5,8,2]));
+document.write("bubble_Sort: "+ bubble_Sort([5,8,2]));
+</script>
+</body>
+</html>
